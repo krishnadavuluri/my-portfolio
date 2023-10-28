@@ -18,7 +18,7 @@ export default function Skills() {
   return (
     <div
       id="skills"
-      className="bg-[color:var(--black)] pt-[4rem] [&>div]:text-[color:var(--textWhite)] top-[4rem] flex flex-col  h-screen w-screen"
+      className="bg-[color:var(--black)] pt-[5rem] [&>div]:text-[color:var(--textWhite)] z-0 flex flex-col  h-screen w-screen"
     >
       <h1 className="timeLineHeading">Skills</h1>
       <div className="flex items-center flex-col gap-6 w-[90%] mx-auto [&>h1]:text-[color:var(--textWhite)]">

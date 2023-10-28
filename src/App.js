@@ -16,9 +16,7 @@ function App() {
       <Header />
       <HeroSection/>
       <Skills/>
-      {/* <Education/> */}
       <EducationV2/>
-      {/* <Test/> */}
     </div>
   );
 }

@@ -61,7 +61,7 @@ export default function Header() {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
           >
-           <a href="#skills">Skills</a>
+            <a href="#skills">Skills</a>
           </motion.h1>
           <motion.h1
             className={navLinkStyling}
@@ -98,7 +98,7 @@ export default function Header() {
           ></HamburgerIcon>
         </div>
       </nav>
-      <MobileNavbar openMenu={openMenu} />
+      <MobileNavbar openMenu={openMenu} setOpenMenu={setOpenMenu} />
     </div>
   );
 }

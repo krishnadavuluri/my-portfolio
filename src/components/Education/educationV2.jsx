@@ -2,7 +2,7 @@ import React from "react";
 
 export default function EducationV2() {
   return (
-    <div id="education" className="h-screen w-screen bg-[color:var(--black)] pt-[5rem] [&>div]:text-[color:var(--textWhite)]">
+    <div id="education" className="bg-[color:var(--black)] pt-[5rem] [&>div]:text-[color:var(--textWhite)] flex flex-col z-0 h-screen w-screen">
       <h1 class="timeLineHeading">Education</h1>
       <div className="timeLine">
         <div className="timeLineContainer">

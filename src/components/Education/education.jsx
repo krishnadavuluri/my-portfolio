@@ -4,7 +4,7 @@ import mongodb from "../../assests/mongodb.png";
 
 export default function Education() {
   return (
-    <div className="bg-[color:var(--black)]  sm:pt-[8rem] pt-[9rem] [&>div]:text-[color:var(--textWhite)] border border-white h-screen w-screen">
+    <div className="bg-[color:var(--black)]  sm:pt-[8rem] pt-[9rem] [&>div]:text-[color:var(--textWhite)] h-screen w-screen">
       <div className="timeLine">
         <div className="timeLineContainer leftContainer">
           <div className="timeLineTextBox">
