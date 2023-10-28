@@ -12,7 +12,7 @@ export const TypeWriter = () => {
 
   return (
     <div>
-      <p  className="sm:text-[4rem] text-[1.5rem]">
+      <p  className="hearo-section-typist">
         I'm a <span className="text-[color:var(--green)]">{text}</span>
         <Cursor cursorBlinking={false} cursorColor="#379683" cursorStyle="|" />
       </p>

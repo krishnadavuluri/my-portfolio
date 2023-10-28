@@ -14,12 +14,12 @@ export default function HeroSection({ id }) {
   return (
     <div
       id="heroSection"
-      className="bg-[color:var(--black)]  sm:pt-[8rem] pt-[9rem] [&>div]:text-[color:var(--textWhite)] top-[4rem] flex flex-col  h-screen w-screen"
+      className="bg-[color:var(--black)] pt-[15rem] [&>div]:text-[color:var(--textWhite)] flex flex-col  h-screen w-screen"
     >
       <div className="grid grid-cols-12 sm:gap-8 gap-4 justify-center ">
         <div className="col-span-12 ">
           <center>
-            <p className="font-bold sm:text-[8rem] text-[2.5rem]">
+            <p className="hero-section-name">
               Krishna Kumar
             </p>
           </center>

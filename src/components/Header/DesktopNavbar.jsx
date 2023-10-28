@@ -61,7 +61,7 @@ export default function Header() {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
           >
-            Skills
+           <a href="#skills">Skills</a>
           </motion.h1>
           <motion.h1
             className={navLinkStyling}
@@ -69,7 +69,7 @@ export default function Header() {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
           >
-            Education
+            <a href="#education">Education</a>
           </motion.h1>
           <span className="transition ease-in-out hover:scale-125 duration-300">
             <motion.button
@@ -99,18 +99,6 @@ export default function Header() {
         </div>
       </nav>
       <MobileNavbar openMenu={openMenu} />
-      {/* <AnimatePresence>
-        {openMenu && (
-          <motion.div
-            initial={{ x: 60, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            exit={{ x: 60, opacity: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <MobileNavbar showMenu={openMenu} />
-          </motion.div>
-        )}
-      </AnimatePresence> */}
     </div>
   );
 }

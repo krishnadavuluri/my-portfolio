@@ -2,20 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Labrada:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manuale:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Labrada:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manuale:wght@300;400;500;600;700;800&display=swap");
 
 * {
   padding: 0;
   margin: 0;
-  scroll-behavior: smooth ;
-  /* font-family: 'Labrada', serif; */
+  scroll-behavior: smooth;
   font-family: "Mukta", sans-serif;
-  /* font-family: "Marcellus", serif;  */
-  /* font-family: 'Manuale', serif; */
 }
 
 :root {
@@ -53,16 +49,15 @@
   opacity: 0;
 }
 
-
-.main{
+.main {
   padding: 2px;
 
   background-color: aqua;
 }
 
-.con{
+.con {
   width: 300px;
-  height:180 px;
+  height: 180 px;
   background-color: #83cdbe;
   border: 2px solid black;
   display: flex;
@@ -73,7 +68,7 @@
   transition: 1s;
 }
 
-.toggle-button{
+.toggle-button {
   width: 100px;
   height: 90px;
   border-radius: 5px;
@@ -81,10 +76,190 @@
   border: 1px solid rgb(45, 43, 43);
 }
 
-.jeep .con{
+.jeep .con {
   justify-content: flex-end;
 }
 
 .change .bar3 {
   transform: translate(0, -11px) rotate(45deg);
+}
+
+.skills-heading {
+  font-weight: bold;
+  font-size: xx-large;
+  text-align: center;
+}
+.hero-section-name {
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.hearo-section-typist {
+  font-size: 60px;
+}
+.skill-text {
+  text-align: center;
+  font-size: 16px;
+}
+
+.timeLineHeading {
+  margin-bottom: 0.4rem;
+
+  color: var(--green);
+
+  font-weight: bolder;
+  font-size: xx-large;
+  text-align: center;
+}
+
+.timeLine {
+  background-color: var(--black);
+  width: 30%;
+  margin: 0 auto;
+  border-left: 3px solid var(--green);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+}
+
+.timeLineTextBox {
+  padding: 0.5rem;
+}
+
+.timeLineContainer {
+  padding: 1rem;
+  border: 1px solid var(--textWhite);
+  border-radius: 3px;
+  margin-top: 8px;
+  position: relative;
+}
+.timeLineContainer h2 {
+  color: var(--green);
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.timeLineContainer::before {
+  content: "";
+  position: absolute;
+  left: -2.7rem;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  top: 2px;
+  background-color: var(--green);
+}
+
+.timeLineContainer::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 10px;
+  top: 2px;
+  left: -1.32rem;
+  display: block;
+  border-color: transparent var(--textWhite) transparent transparent; 
+}
+
+/*Time line style*/
+
+/* .timeLine {
+  background-color: #379683;
+  margin: 0 auto;
+  max-width: 1200px;
+  height: auto;
+  position: relative;
+  padding: 5px;
+}
+
+.timeLine::after {
+  content: "";
+  width: 15px;
+  top: 0;
+  background-color: #f3f4f4;
+
+  height: 100%;
+
+  position: absolute;
+  left: 50%;
+  z-index: 25;
+}
+
+.timeLineContainer {
+  background-color: rgb(215, 168, 168);
+  padding: 4px;
+  width: 400px;
+  height: auto;
+  position: relative;
+  margin: 10px 2px;
+} */
+
+/* .timeLineContainer img {
+  position: absolute;
+  top: 2px;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+
+  z-index: 30;
+}
+
+.leftContainer img {
+  left: 117%;
+}
+
+.rigthContainer img {
+  right: 124%;
+}
+
+.leftContainer {
+  left: 10%;
+}
+.rigthContainer {
+  left: 60%;
+} */
+
+@media (max-width: 640px) {
+  .skills-heading {
+    font-size: 16px;
+  }
+  .skill-text {
+    font-size: 13px;
+  }
+  .hero-section-name {
+    font-size: 45px;
+  }
+  .hearo-section-typist {
+    font-size: 28px;
+  }
+  .timeLine {
+    width: 90%;
+  }
+  .timeLineContainer h2 {
+    font-size: medium;
+  }
+  .timeLineContainer h3 {
+    font-weight: normal;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1000px) {
+  .skills-heading {
+    font-size: 18px;
+  }
+  .skill-text {
+    font-size: 15px;
+  }
+  .hero-section-name {
+    font-size: 60px;
+  }
+  .hearo-section-typist {
+    font-size: 50px;
+  }
+
+  .timeLine {
+    width: 80%;
+  }
 }
